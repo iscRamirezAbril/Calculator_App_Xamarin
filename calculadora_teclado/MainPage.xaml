@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculadora_teclado.MainPage"
+             BackgroundColor="#22252d">
+    <!-- "AbsoluteLayout" -->
+    <AbsoluteLayout>
+        <!-- "AbsoluteLayout.LayoutBounds": Esta propiedad se utiliza para establecer las posiciones X, Y y el ancho y alto de los elementos. -->
+        <!-- "AbsoluteLayout.LayoutFlags": Esta propiedad se encarga de configurar cómo se interpretarán los valores en la pantalla. -->
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, .32" AbsoluteLayout.LayoutFlags="All"
+                     Padding="24, 0" Spacing="0" HorizontalOptions="End" VerticalOptions="End">
+            <Label Padding="8, 0" HorizontalOptions="End">
+                <!-- "Label.FormattedText": Es una propiedad que obtiene o establece el texto formateado de la etiqueta. -->
+                <Label.FormattedText>
+                    <!-- "Label.FormattedText": comprende una o más instancias Span, establecidas a través de la propiedad Spans -->
+                    <FormattedString>
+                        <!-- "FormattedString.Spans": Obtiene una colección de Spans -->
+                        <FormattedString.Spans>
+                            <Span x:Name="spnFirst" Text="12" FontSize="36" TextColor="White"/>
+                            <Span x:Name="spnSecond" Text="+" FontSize="32" TextColor="#d86d6f"/>
+                            <Span x:Name="spnThird" Text="12" FontSize="36" TextColor="White"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label x:Name="lblNumber" HorizontalOptions="End" Text="144" TextColor="White"
+                   Margin="0, 0, 16, 0" FontSize="84" FontAttributes="Bold"/>
+        </StackLayout>
+        <Frame AbsoluteLayout.LayoutBounds="0, 1, 1, .1" AbsoluteLayout.LayoutFlags="YProportional"
+               BackgroundColor="#2a2d37"/>
+        <!-- "SizeProportional": Obtiene el ancho y el alto como diseño proporcional, los elementos restantes son absolutos -->
+        <!-- "XProportional — YProportional": Obtiene X o Y respectivamente como diseño proporcional, los elementos restantes son absolutos -->
+        <Frame AbsoluteLayout.LayoutBounds="0, 1, 1, .62" AbsoluteLayout.LayoutFlags="SizeProportional,YProportional"
+               BackgroundColor="#2a2d37" HasShadow="False" CornerRadius="45">
+            <!-- "RowDefinitions": Propiedad de los Grid que establece el número de Filas para dicha capa -->
+            <!-- "ColumnDefinitions":Propiedad de los Grid que establece el número de Columnas para dicha capa -->
+            <!-- "RowSpacing": Establece el número de pixeles de espacio entre cada fila de la capa -->
+            <!-- "ColumnSpacing": Establece el número de pixeles de espacio entre cada columna de la capa -->
+            <!-- "Grid.Column": Propiedad para la capa Grid donde se establece el n'umero de columna en donde se insertará un elemento -->
+            <!-- "Grid.Row": Propiedad para la capa Grid donde se establece el n'umero de fila en donde se insertará un elemento -->
+            <Grid AbsoluteLayout.LayoutBounds="0, 1, 1, .62" AbsoluteLayout.LayoutFlags="SizeProportional, YProportional"
+                  RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*" Padding="10" RowSpacing="4"
+                  ColumnSpacing="4">
+                <!-- "Frame" correspndiente al botón "btnSumar" -->
+                <Frame Grid.Column="0" Grid.Row="0" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="#37ae9a" FontSize="38" VerticalOptions="Fill" Text="+"
+                            Background="#282b33" Clicked="btnSumar"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnRestar" -->
+                <Frame Grid.Column="1" Grid.Row="0" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="#37ae9a" FontSize="38" Padding="2, -4, 0, 0" VerticalOptions="Fill" Text="-"
+                            Background="#282b33" Clicked="btnRestar"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnMultiplicar" -->
+                <Frame Grid.Column="2" Grid.Row="0" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="#37ae9a" FontSize="38" Padding="2, -8, 0, 0" VerticalOptions="Fill" Text="x" TextTransform="None"
+                            Background="#282b33" Clicked="btnMultiplicar"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnDividir" -->
+                <Frame Grid.Column="3" Grid.Row="0" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="#37ae9a" FontSize="38" VerticalOptions="Fill" Text="÷"
+                            Background="#282b33" Clicked="btnDividir"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumSiete" -->
+                <Frame Grid.Column="0" Grid.Row="1" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="7"
+                            Background="#282b33" Clicked="btnNumSiete"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumOcho" -->
+                <Frame Grid.Column="1" Grid.Row="1" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="8"
+                            Background="#282b33" Clicked="btnNumOcho"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumNueve" -->
+                <Frame Grid.Column="2" Grid.Row="1" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="9"
+                            Background="#282b33" Clicked="btnNumNueve"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnFuncionAC" -->
+                <Frame Grid.Column="3" Grid.Row="1" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="#d86d6f" FontSize="28" VerticalOptions="Fill" Text="AC"
+                            Background="#282b33" Clicked="btnFuncionAC"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumCuatro" -->
+                <Frame Grid.Column="0" Grid.Row="2" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="4"
+                            Background="#282b33" Clicked="btnNumCuatro"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumCinco" -->
+                <Frame Grid.Column="1" Grid.Row="2" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="5"
+                            Background="#282b33" Clicked="btnNumCinco"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumSeis" -->
+                <Frame Grid.Column="2" Grid.Row="2" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="6"
+                            Background="#282b33" Clicked="btnNumSeis"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnFuncionC" -->
+                <Frame Grid.Column="3" Grid.Row="2" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="#d86d6f" FontSize="28" VerticalOptions="Fill" Text="C"
+                            Background="#282b33" Clicked="btnFuncionC"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumUno" -->
+                <Frame Grid.Column="0" Grid.Row="3" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="1"
+                            Background="#282b33" Clicked="btnNumUno"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumDos" -->
+                <Frame Grid.Column="1" Grid.Row="3" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="32" VerticalOptions="Fill" Text="2"
+                            Background="#282b33" Clicked="btnNumDos"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumTres" -->
+                <Frame Grid.Column="2" Grid.Row="3" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="3"
+                            Background="#282b33" Clicked="btnNumTres"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnIgual" -->
+                <Frame Grid.Column="3" Grid.Row="3" Grid.RowSpan="2" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="38" VerticalOptions="Fill" Text="="
+                            Background="#d86d6f" Clicked="btnIgual"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnNumCero" -->
+                <Frame Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="28" VerticalOptions="Fill" Text="0"
+                            Background="#282b33" Clicked="btnNumCero"/>
+                </Frame>
+                <!-- "Frame" correspndiente al botón "btnPunto" -->
+                <Frame Grid.Column="2" Grid.Row="4" Padding="-10" Margin="12" CornerRadius="12" BackgroundColor="#282b33">
+                    <Button TextColor="White" FontSize="38" VerticalOptions="Fill" Text="."
+                            Background="#282b33" Clicked="btnPunto"/>
+                </Frame>
+            </Grid>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

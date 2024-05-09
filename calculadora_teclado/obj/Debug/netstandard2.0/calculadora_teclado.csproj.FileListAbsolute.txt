@@ -1,0 +1,15 @@
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\bin\Debug\netstandard2.0\calculadora_teclado.deps.json
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\bin\Debug\netstandard2.0\calculadora_teclado.dll
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\bin\Debug\netstandard2.0\calculadora_teclado.pdb
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.csproj.AssemblyReference.cache
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.AssemblyInfoInputs.cache
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.AssemblyInfo.cs
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.csproj.CoreCompileInputs.cache
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.dll
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\refint\calculadora_teclado.dll
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\calculadora_teclado.pdb
+C:\Users\Abril\Downloads\calculadora_teclado\calculadora_teclado\obj\Debug\netstandard2.0\ref\calculadora_teclado.dll
